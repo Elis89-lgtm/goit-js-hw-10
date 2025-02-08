@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           message: `✅ Fulfilled promise in ${delay}ms`,
           position: "topRight",
         });
+        form.reset(); 
       })
       .catch((delay) => {
         iziToast.error({
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
           message: `❌ Rejected promise in ${delay}ms`,
           position: "topRight",
         });
+        form.reset(); 
       });
   });
 });
