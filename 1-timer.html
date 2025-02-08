@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
+    
+    <style>
+
+    .timer {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .field {
+      text-align: center;
+    }
+    .value {
+      font-size: 2em;
+      display: block;
+    }
+    .label {
+      font-size: 1em;
+    }
+  </style>
     <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-DD3qoKza.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/1-timer-KO-wgsKO.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-BbSUbo7J.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/1-timer-CUIu2D3z.js"></script>
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-C1gPI-5C.css">
   </head>
   <body>
    
@@ -18,9 +41,31 @@
         <h1 class="main-title">
           Timer
         </h1>
-       
+        <input type="text" id="datetime-picker" />
+        <button type="button" data-start>Start</button>
+        
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+        
+        
       </div>
     </main>
-
+    
   </body>
 </html>
